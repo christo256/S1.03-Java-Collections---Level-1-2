@@ -1,6 +1,8 @@
 package task1_S1_03_Level2;
 
-public class Restaurant {
+import java.util.Objects;
+
+public class Restaurant implements Comparable<Restaurant> {
 
     private final String name;
     private final int score;
@@ -19,29 +21,33 @@ public class Restaurant {
     }
 
     @Override
-    public String toString() {
-        return "Restaurant{" +
-                "name='" + name + '\'' +
-                ", score=" + score +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object obj) {
 
         if (this == obj) return true;
         if (!(obj instanceof Restaurant)) return false;
 
         Restaurant other = (Restaurant) obj;
-
-        if (!name.equals(other.name)) return false;
-        return score == other.score;
+        return this.score == other.score &&
+                Objects.equals(this.name, other.name);
     }
+
     @Override
     public int hashCode() {
-        int result = name.hashCode();
-        result = 31 * result + score;
-        return result;
+        return name.hashCode() + score;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (" + score + ")";
+    }
+
+    @Override
+    public int compareTo(Restaurant other) {
+        int nameCompare = name.compareTo(other.name);
+        if (nameCompare != 0) {
+            return nameCompare;
+        }
+        return Integer.compare(other.score, this.score);
     }
 }
 
