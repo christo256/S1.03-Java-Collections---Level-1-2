@@ -1,9 +1,9 @@
-📘 Sprint 0 - Java Collections & File I/O - Level 1 & Level 2
-📄 Description
+## 📘 Sprint 0 - Java Collections & File I/O - Level 1 & Level 2
+## 📄 Description
 
-This repository contains Java exercises focused on collections (ArrayList, HashSet, HashMap), file input/output operations, and basic object-oriented programming. The solutions follow the best practices described in Sprint 0, and all code is written in English using Eclipse or IntelliJ IDEA.
+This repository contains Java exercises focused on collections (ArrayList, HashSet, HashMap), file input/output operations, and basic object-oriented programming. The solutions follow the best practices described in Sprint 0, and all code is written in English using IntelliJ IDEA.
 
-🧩 Level 1 - Exercises
+### 🧩 Level 1 - Exercises
 Exercise 1 — Months Collection
 
 Created a Month class with a name attribute and overridden equals(), hashCode(), and toString().
