@@ -60,7 +60,7 @@ This repository contains the exercises for **Level 1** and **Level 2** focusing 
 - Git properly configured  
 - Follow Sprint 0 coding and repository best practices  
 
----
+--- 
 
 ## 🛠️ Installation & Usage
 
