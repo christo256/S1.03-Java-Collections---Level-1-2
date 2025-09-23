@@ -1,71 +1,69 @@
 ## 📘 Sprint 0 - Java Collections & File I/O - Level 1 & Level 2
+
 ## 📄 Description
 
-This repository contains Java exercises focused on collections (ArrayList, HashSet, HashMap), file input/output operations, and basic object-oriented programming. The solutions follow the best practices described in Sprint 0, and all code is written in English using IntelliJ IDEA.
+This repository contains the exercises for **Level 1** and **Level 2** focusing on Java collections (`ArrayList`, `HashSet`, `HashMap`), file input/output, and basic object-oriented programming. The projects follow the best practices defined in Sprint 0, and all code is written in English using IntelliJ IDEA.
+
+---
 
 ### 🧩 Level 1 - Exercises
-Exercise 1 — Months Collection
 
-Created a Month class with a name attribute and overridden equals(), hashCode(), and toString().
+#### Exercise 1 - Month Collection Management
 
-Initialized an ArrayList with 11 months (excluding August), then inserted August in the correct position to keep the list ordered.
+- Create a class named `Month` with an attribute `name`.  
+- Initialize an `ArrayList<Month>` with 11 months (excluding August).  
+- Insert "August" at the correct index to maintain order.  
+- Convert the `ArrayList` to a `HashSet<Month>` to ensure no duplicates are allowed.  
+- Traverse the collections using both a **for loop** and an **Iterator**.
 
-Converted the ArrayList to a HashSet to demonstrate elimination of duplicates.
+#### Exercise 2 - Reverse List Using ListIterator
 
-Traversed the collection both with a for loop and an Iterator.
+- Create a `List<Integer>` and populate it with numbers.  
+- Create a second `List<Integer>` and insert elements from the first list in reverse order using a `ListIterator`.
 
-Exercise 2 — Reverse List
+#### Exercise 3 - Capitals Quiz Game
 
-Created a List<Integer> with several numbers in ascending order.
+- Read the file `countries.txt`, which contains country-capital pairs, into a `HashMap<String, String>`.  
+- Ask the user for their name.  
+- Randomly select 10 countries and prompt the user to enter the capital city for each.  
+- Track and count the correct answers.  
+- Save the user’s name and score into a file called `classificacio.txt`.
 
-Created a second list where elements from the first are inserted in reverse order using a ListIterator.
+---
 
-Exercise 3 — Capitals Quiz Game
+### 🧩 Level 2 - Exercises
 
-Read countries.txt file storing country-capital pairs in a HashMap<String, String>.
+#### Exercise 1 - Restaurant Class and HashSet Uniqueness
 
-Implemented a console quiz game that asks the user for their name and then quizzes them on 10 random countries, asking for their capitals.
+- Create a `Restaurant` class with attributes `name` (String) and `score` (int).  
+- Override `equals()` and `hashCode()` so that the `HashSet<Restaurant>` prevents adding duplicate restaurants with the **same name and score** but allows same names with different scores.
 
-The user's score is tracked and saved in a classificacio.txt file at the end of the game.
+#### Exercise 2 - Sorting Restaurants
 
-🧩 Level 2 - Exercises
-Exercise 1 — Unique Restaurants in a HashSet
+- Implement `Comparable<Restaurant>` to sort `Restaurant` objects first by `name` (alphabetically), then by `score` in **descending order**.  
+- Demonstrate sorting by converting the `HashSet` to a `List` and sorting it with `Collections.sort()`.
 
-Created a Restaurant class with name and score attributes.
+---
 
-Overrode equals() and hashCode() so that a HashSet prevents adding duplicates with the same name and score but allows the same name with different scores.
+## 💻 Technologies Used
 
-Exercise 2 — Sorting Restaurants
+- Java 17 or higher  
+- Eclipse or IntelliJ IDEA  
+- Git & GitHub  
 
-Implemented Comparable<Restaurant> to sort restaurants by name alphabetically, and if names are equal, by score in descending order.
+---
 
-Demonstrated sorting by converting the HashSet to a List and using Collections.sort().
+## 📋 Requirements
 
-💻 Technologies Used
+- Java JDK 17 or later  
+- IDE (Eclipse or IntelliJ IDEA)  
+- Git properly configured  
+- Follow Sprint 0 coding and repository best practices  
 
-Java 17+
+---
 
-Eclipse or IntelliJ IDEA
+## 🛠️ Installation & Usage
 
-Git & GitHub
-
-📋 Requirements
-
-Java JDK 17 or later
-
-IDE: Eclipse or IntelliJ IDEA
-
-Git properly configured
-
-Follow Sprint 0 best practices for code and repository structure
-
-🛠️ Installation & Usage
-
-Clone this repository:
-
-git clone https://github.com/yourusername/your-repo.git
-
-
-Import the projects in your preferred IDE. Run each Main class under the corresponding package to execute the exercises.
-
-For the quiz game (Level 1, Exercise 3), ensure the countries.txt file is located in the working directory.
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/christo256/S1.03-Java-Collections---Level-1-2.git
