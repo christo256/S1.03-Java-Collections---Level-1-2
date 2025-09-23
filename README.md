@@ -48,7 +48,7 @@ This repository contains the exercises for **Level 1** and **Level 2** focusing 
 ## 💻 Technologies Used
 
 - Java 17 or higher  
-- Eclipse or IntelliJ IDEA  
+- IntelliJ IDEA  
 - Git & GitHub  
 
 ---
